@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamps - Organic Tampons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Tamps</h1>
+    <nav>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="javascript:void(0)" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="text">
+            <h2>TAMPONGER FÖR EN BALANSERAD INTIMHÄLSA</h2>
+            <p>Upptäck vårt utbud av tamponger – speciellt utvecklade för att hjälpa dig att upprätthålla den naturliga pH-balansen i samband med mensen.</p>
+        </div>
+        <div class="image">
+            <img src="images/tamponger-2-700x560.jpg" alt="Tamponger för balanserad intimhälsa">
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="product-grid">
+    <h2>Our Products</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/ellen-probiotic-tampon-medium_1-612x800.png" alt="Probiotic Tampon Medium">
+            <h3>Probiotic Tampon Medium</h3>
+            <p>Perfect for medium flows</p>
+            <button class="btn" data-product-index="0">Buy Now - 50 kr</button>
+        </div>
+        <div class="product">
+            <img src="images/probiotic-tampon-rich.jpg" alt="Probiotic Tampon Rich">
+            <h3>Probiotic Tampon Rich</h3>
+            <p>Great for heavy flows</p>
+            <button class="btn" data-product-index="1">Buy Now - 60 kr</button>
+        </div>
+        <div class="product">
+            <img src="images/menskit-1.jpg" alt="Menstrual Kit">
+            <h3>Menstrual Kit</h3>
+            <p>Complete cycle support</p>
+            <button class="btn" data-product-index="2">Buy Now - 100 kr</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Cart Section -->
+<div id="cart-container" style="display: none;">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">0</span> kr</p>
+    <button onclick="toggleCart()">Close Cart</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tamps. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
